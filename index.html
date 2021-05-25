@@ -1,227 +1,25 @@
 <html>
 
 <head>
+   <link rel="icon" type="image/x-icon" href="assets/icons/ico.ico" />
   <title>ZTICKER.IN</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </script>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Comfortaa', cursive;
-      font-weight: 700;
-    }
-
-    header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      position: fixed;
-      background: #fff;
-      width: 100vw;
-
-    }
-
-    #name {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
-      font-size: 4vw;
-
-    }
-
-    ul {
-      display: flex;
-      flex-direction: row;
-    }
-
-    header li {
-      padding: 10px;
-      list-style-type: none;
-    }
-
-    main {
-      display: flex;
-      flex-direction: column;
-    }
-
-    #intro {
-      background: #000;
-      height: auto;
-      padding: 50px 10px 50px 10px;
-    }
-
-    #services {
-      background: white;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-    }
-
-    #boxs {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    #boxs > * {
-      width: 15vw;
-      padding: 10px;
-
-    }
-
-    #services>* {
-      flex: 1 1 auto;
-      padding: 10px;
-      margin: 10px;
-      width: 60vw;
-      background: #111;
-      color: #ccc;
-      text-align: center;
-      border-radius: 2vw;
-      line-height: 2em;
-    }
-
-    #services ol {
-      background: white;
-      color: #111;
-      padding: 5px;
-      border-radius: 0 0 2vw 2vw;
-
-    }
-
-    #services li {
-      list-style-type: none;
-    }
-
-    #help {
-      background: black;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    #help>* {
-      padding: 10px;
-      margin: 10px;
-      width: 60vw;
-      background: #fff;
-      color: #000;
-      text-align: center;
-      border-radius: 2vw;
-      line-height: 2em;
-    }
-
-    #help li {
-      list-style-type: none;
-    }
-
-#box1, #box2, #box3 {
-    margin: auto;
-}
-
-    @media only screen and (max-width: 768px) {
-      #boxs {
-        flex-direction: column;
-      }
-        #boxs > * {
-          width: 50vw;
-          padding: 10px;
-
-
-      }
-      h1{
-        font-size: 5vw
-      }
-      h2{
-        font-size: 4vw
-      }
-      li{
-        font-size: 3vw
-      }
-
-    }
-
-
-
-
-    .material-icons {
-      font-family: 'Material Icons';
-      font-weight: normal;
-      font-style: normal;
-      font-size: 8vw;
-      /* Preferred icon size */
-      display: inline-block;
-      line-height: 1;
-      text-transform: none;
-      letter-spacing: normal;
-      word-wrap: normal;
-      white-space: nowrap;
-      direction: ltr;
-      color: #000;
-
-      /* Support for all WebKit browsers. */
-      -webkit-font-smoothing: antialiased;
-      /* Support for Safari and Chrome. */
-      text-rendering: optimizeLegibility;
-
-      /* Support for Firefox. */
-      -moz-osx-font-smoothing: grayscale;
-
-      /* Support for IE. */
-      font-feature-settings: 'liga';
-    }
-
-    #neontext {
-      padding: 10vw;
-      width: auto;
-      margin: 0 auto;
-    }
-
-    .tex {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .tex h1 {
-      color: #cccccc;
-      font-size: 10vw;
-      text-transform: uppercase;
-    }
-  </style>
+  <link rel="stylesheet" href="/css/master.css">
 </head>
 
 <body>
-  <!-- Create  Section
-        > Menubar
-            Title, Menus
-        > Welcome Screen
-            Animated welcome
-        > Services
-            Design | Printing | Cutting
-        > Help
-            About | FAQ | Conditions Apply
-
--->
   <header>
+    <div id="namebox">
+      <div id="ico"><img src="assets/icons/ico.svg" alt="ico"></div>
+        <div id="name">ZTICKER.IN</div>
+    </div>
 
-    <div id="name">ZTICKER.IN</div>
     <nav>
       <ul>
         <li><a href="#"> <span class="material-icons">public</span></a></li>
